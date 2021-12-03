@@ -1,0 +1,58 @@
+// Header
+.logo img{
+    max-height: 80px;
+    max-width: 80px;
+  }
+  
+  .links {
+    margin-top: 5px;
+    margin-left: auto;
+  }
+  
+  .links a {
+    text-decoration: none;
+    padding: 2px 10px;
+  
+    :hover {
+      color: $pink-color;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+  
+//Listas
+
+.listContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 40px;
+}
+
+.listContainer ul {
+    width: 50%;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+
+    @media (max-width: 700px) {
+        min-width: 250px;    
+    }
+}
+
+.listContainer li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+.listContainer h5 {
+    color: blue;
+}
+
+// Título
+
+.tituloInfo {
+    text-align: center;
+}

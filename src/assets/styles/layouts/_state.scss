@@ -1,0 +1,18 @@
+.is-selected {
+    background-color: white;
+    color: $pink-color;
+    border-radius: 10px;
+  }
+
+  .is-visibleFaq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    }
+    
+  .faqTitulo:hover{
+      color: yellow;
+      cursor: pointer;
+  }

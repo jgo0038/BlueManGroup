@@ -1,0 +1,395 @@
+// Main page
+
+  .contentGrid {
+    color: white;
+    display: grid;
+    grid-template-columns: auto-fit 5fr 5fr auto-fit ;
+    grid-template-rows: auto-fit 1fr 1fr 1fr auto-fit ;
+    grid-template-areas: 
+    "sidebar-1 content sidebar-2 sidebar-2"
+    "sidebar-1 content sidebar-2 sidebar-2"
+    "sidebar-1 content sidebar-2 sidebar-2"
+    "imagenH imagenH imagenH imagenH"
+    "imagenH imagenH imagenH imagenH"
+}
+
+ 
+  .info1 {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    font-size: larger;
+    padding: 20px;
+  }
+
+  .info2 {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    font-size: larger;
+    padding: 20px;
+  }
+
+  .info3 {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    font-size: larger;
+  }
+
+  .date1 {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    color: yellow;
+    font-size: large;
+  }
+  .tickets {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    grid-area: imagenH;
+    color: yellow;
+    align-self: start;
+    justify-self: center;
+    padding: 12px;
+    background-color: $pink-color;
+    font-style: none;
+
+    :hover {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+
+  .saberMas {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    color: white;
+    background-color: $pink-color;
+    padding: 0;
+    margin: 0;
+
+    :hover {
+        color: blue;
+    cursor: pointer;
+    }
+  }
+  
+  .badge{
+    text-decoration: none;
+    color: white;
+    background-color: $pink-color;
+  }
+
+  .imagenPortada {
+    display: flex;
+    grid-column: 3 / span 2;
+    grid-row: 2;
+  }
+  .imagenPortada img {
+    max-height: 400px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imagenPortada2 {
+    display: flex;
+    grid-area: imagenH;
+    place-self: center;
+  }
+  .imagenPortada2 img{
+    max-height: 400px;
+    max-width: 600px;
+    place-self: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .titulo {
+    background-color: black;
+    color: white;
+    grid-area: sidebar-2;
+    grid-row: 3;
+    justify-self: left;
+    padding: 15px;
+    justify-self: center;
+  }
+
+// Members
+
+.tituloMiembros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/home2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: 350px 800px;
+    padding: 15px;
+    color: white;
+    font-size: 40px;
+}
+
+.miembros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    min-height: 300px;
+}
+
+.information {
+    margin: 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+    font-size: larger;    
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #efeeea;
+}
+
+.infoText {
+    width: 70%;
+}
+.infoImg img{
+    max-width: 100%;
+    height: auto;
+}
+.infoImg {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.cardFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    max-width: 400px;
+}
+
+.card img {
+    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width:1000px) {
+    .information {
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 10px;
+        font-size: 20px;
+    }
+    .infoImg img{
+        min-width: 300px;
+    }
+}
+
+@media (max-width:450px) {
+    
+    .infoImg img{
+        min-width: 150px;
+        width: 150px;
+    }
+}
+
+// Information 
+
+
+.muralFotos {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto-fit auto-fit;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "foto1 foto2"
+    "foto3 foto4";
+    margin: 5px;
+
+    @media (max-width: 700px) {
+        grid-template-areas: 
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        ;
+    }
+}
+
+.muralFotos div {
+    align-self: center;
+    
+    @media (max-width: 700px) {
+        justify-self: center;
+    }
+}
+
+.muralFotos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.foto1 {
+    grid-area: foto1;
+    justify-self: end;
+    
+}
+
+.foto1 img {
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto2 img {
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+}
+
+.foto3 {
+    grid-area: foto3;
+    justify-self: end;
+}
+
+.foto3 img {
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto4 img {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.blockquote {
+    background-color: rgb(196, 226, 255);
+}
+
+.highlightText {
+    font-size: 30px;
+    max-width: 40%;
+    color: $pink-color;
+
+    @media (max-width: 500px) {
+        max-width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.quoteText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.textInformation2 {
+    background-color: rgb(196, 226, 255);
+}
+
+@media (max-width: 700px) {
+    .muralFotos img {
+        border: 0;
+    }
+}
+
+// Tickets
+
+.videoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fechasYForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fechasYForm h2{
+    color: yellow;
+}
+
+.fechas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px 0 0;
+}
+
+.ticketForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.formT p{
+    text-align: center;
+}
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.faqDisplay h2{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.respuestFaq {
+    font-size: large;
+}
+
+.fas {
+    margin: 0 4px;
+}
+
+@media(max-width:700px) {
+    .fechasYForm{
+        flex-direction: column;
+    }
+}

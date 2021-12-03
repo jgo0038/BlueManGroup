@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>The Blue Man Group</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="logo">
+      <a href="index.html"> <img src="./assets/images/logo.png" alt="Home logo"></a>
+    </div>
+
+    <div class="links">
+      <a href="members.html">Conoce a los artistas</a>
+      <a href="information.html">Información del show</a>
+      <a href="tickets.html" class="is-selected">Tickets</a>
+    </div>
+  </nav>
+
+
+  <div class="videoDiv">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZSeTJu3vEIo"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="fechasYForm">
+    <div class="fechas">
+      <h1 class="tituloInfo">Fechas disponibles</h1>
+      <h2>Madrid</h2>
+      <p class="respuestaFaq">08/12/2021</p>
+      <del>
+        <h2>Madrid</h2>
+        <p class="respuestaFaq">09/12/2021</p>
+      </del>
+      <h2>Barcelona</h2>
+      <p class="respuestaFaq">12/12/2021</p>
+      <h2>Burgos</h2>
+      <p class="respuestaFaq">20/12/2021</p>
+      <h2>Santander</h2>
+      <p class="respuestaFaq">22/12/2021</p>
+    </div>
+    <div class="ticketForm">
+      <h1><i class="fas fa-ticket-alt"></i><i class="fas fa-ticket-alt"></i><i class="fas fa-ticket-alt"></i><i class="fas fa-ticket-alt"></i><i class="fas fa-ticket-alt"></i></h1>
+      <form>
+        <div class="form-group">
+          <small class="form-text text-warning">Tus datos nunca serán compartidos con nadie.</small>
+          <label>Nombre</label>
+          <input type="email" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label>Numero de telefono</label>
+          <input type="email" class="form-control" placeholder="Numero de telefono">
+
+        </div>
+        <div class="form-group">
+          <label>Fecha:
+            <select name="fechas">
+              <option value="madrid1">Madrid 08/12/2021</option>
+              <option value="bcn">Barcelona 12/12/2021</option>
+              <option value="burgos">Burgos 20/12/2021</option>
+              <option value="santander">Santander 22/12/2021</option>
+            </select></label>
+        </div>
+        <div class="form-group">
+          <label>Número de tickets:
+            <select name="role[]">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select></label>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="exampleCheck1">Enviar SMS con la recepción de tickets también</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Solicitar</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <div class="faq">
+    <a class="faqDisplay">
+      <h3 class="faqTitulo">FAQ +</h3>
+    </a>
+    <div class="is-visibleFaq" style="display: none;">
+      <h3 class="tituloFaq">¿Dónde realizo el pago de mis tickets?</h3>
+      <p class="respuestaFaq">Una vez introduce los datos en el formulario superior, se enviará al correo electrónico y
+        número de télefono (si se indica) proporcionado un enlace con la página para realizar el pago de forma segura.
+      </p>
+      <h3 class="tituloFaq">¿De que formas puedo realizar el pago?</h3>
+      <p class="respuestaFaq">Para realizar el pago se tiene que hacer via internet, desde el enlace proporcionado. <br>
+        Se facilita el pago mediante tarjeta de crédito, PayPal, transferencia o pagos desde el móvil.
+      </p>
+    </div>
+  </div>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
